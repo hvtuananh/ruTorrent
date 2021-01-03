@@ -37,8 +37,8 @@
 	$scgi_port = 5000;
 	$scgi_host = "127.0.0.1";
 
-	// For web->rtorrent link through unix domain socket 
-	// (scgi_local in rtorrent conf file), change variables 
+	// For web->rtorrent link through unix domain socket
+	// (scgi_local in rtorrent conf file), change variables
 	// above to something like this:
 	//
 	// $scgi_port = 0;
@@ -47,11 +47,12 @@
 	$XMLRPCMountPoint = "/RPC2";		// DO NOT DELETE THIS LINE!!! DO NOT COMMENT THIS LINE!!!
 
 	$pathToExternals = array(
-		"php" 	=> '',			// Something like /usr/bin/php. If empty, will be found in PATH.
-		"curl"	=> '',			// Something like /usr/bin/curl. If empty, will be found in PATH.
-		"gzip"	=> '',			// Something like /usr/bin/gzip. If empty, will be found in PATH.
-		"id"	=> '',			// Something like /usr/bin/id. If empty, will be found in PATH.
-		"stat"	=> '',			// Something like /usr/bin/stat. If empty, will be found in PATH.
+		"php" 	=> '/usr/bin/php',			// Something like /usr/bin/php. If empty, will be found in PATH.
+		"curl"	=> '/usr/bin/curl',			// Something like /usr/bin/curl. If empty, will be found in PATH.
+		"gzip"	=> '/usr/bin/gzip',			// Something like /usr/bin/gzip. If empty, will be found in PATH.
+		"id"	=> '/usr/bin/id',			// Something like /usr/bin/id. If empty, will be found in PATH.
+		"stat"	=> '/usr/bin/stat',			// Something like /usr/bin/stat. If empty, will be found in PATH.
+		"pgrep" => '/usr/bin/pgrep',
 	);
 
 	$localhosts = array( 			// list of local interfaces
